@@ -1,0 +1,8 @@
+#!/bin/bash
+for i in 1 2 3
+do
+  echo "commit $i $(date)" >> log.txt
+  git add .
+  git commit -m "green $i"
+done
+git push
